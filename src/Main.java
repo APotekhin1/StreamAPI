@@ -1,6 +1,8 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.util.Comparator.*;
+
 public class Main {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Jack", "Connor", "Harry", "George", "Samuel", "John");
@@ -33,6 +35,8 @@ public class Main {
 
         //отсортиров. по фамилии работоспособные ж/м
 
+        List<String> productive = persons.stream()
+                .sorted(Comparator.naturalOrder())
 
 
     }

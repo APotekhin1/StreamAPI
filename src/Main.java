@@ -15,6 +15,7 @@ public class Main {
                     Education.values()[new Random().nextInt(Education.values().length)])
             );
         }
+
         // количество несовершеннолетних
         long count = persons.stream()
                 .filter(person -> person.getAge() < 18)

@@ -29,14 +29,11 @@ public class Main {
                 .filter(person -> person.getSex() == Sex.MAN)
                 .filter(person -> person.getAge() >= 18)
                 .filter(person -> person.getAge() <= 27)
-                .map(Person :: getFamily)
+                .map(Person::getFamily)
                 .collect(Collectors.toList());
         recruit.forEach(System.out::println);
 
         //отсортиров. по фамилии работоспособные ж/м
-
-        List<String> productive = persons.stream()
-                .sorted(Comparator.naturalOrder())
 
 
     }
